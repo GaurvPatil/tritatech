@@ -1,13 +1,337 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imgninfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 4rem 4rem 4rem;
+}
+.testimoni {
+  border: 2px solid black;
+}
+.swipe {
+  height: 90vh;
+}
+.swipe h1{
+  font-size: 25px;
+  padding-top: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.onlineicons {
+  color: rgb(18, 90, 223);
+  font-size: 2.5rem;
 }
+.onlineicons2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.Qinfo {
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  width: 750px;
+  height: auto;
+  font-weight: 500;
+  font-size: 1.9rem;
+  text-align-last: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size:cover;
+  
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .herocontent {
+    font-size: 16px;
+    
+  }
+  .herocontent .Herohead {
+    font-size: 1.5em;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+  .imgninfo {
+    gap: 2rem;
+  }
+  .info h1 {
+    font-size: 1.5em;
+    color: #142b6f;
+    font-weight: 600;
+  }
+  .info p {
+    color: grey;
+  }
+
+  .Questions {
+    font-size: 16px;
+  }
+
+  .Questions .h1lorem {
+    font-size: 1.5em;
+    color: #142b6f;
+    font-weight: 600;
+  }
+
+  .Questions p {
+    color: grey;
+  }
+  .Questions .Qhead {
+    font-size: 2em;
+  }
+  .Questions .Qinfo {
+    font-size: 1.5em;
+  }
+
+  
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .herocontent {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+  .Questions {
+    font-size: 20px;
+  }
+  .Questions .Qinfo {
+    font-size: 1.2em;
+  }
+
+
+  
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .herocontent {
+    font-size: 25px;
+  }
+  .herocontent button {
+    padding: 0.5em 3em;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .info h1 {
+    font-size: 2.5em;
+  }
+  .info p {
+    color: grey;
+    font-size: 1.2em;
+    line-height: 40px;
+  }
+
+
+  .Questions {
+    font-size: 20px;
+    gap: 1.5em;
+  }
+
+  .Questions .h1lorem {
+    font-size: 2.5em;
+  }
+
+  .Questions p {
+    color: grey;
+    font-size: 1.2em;
+    line-height: 40px;
+  }
+  .Questions .Qhead {
+    font-size: 2em;
+  }
+  .Questions .Qinfo {
+    font-size: 1.5em;
+  }
+
+
+
+
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  *{
+   overflow-x: hidden;
+  }
+  
+    .herocontent{
+      font-size: 14px;
+      flex-direction: column;
+      gap: 2em;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      
+  }
+  .herocontent div{
+    height: 100%;
+    width: 100%;
+  }
+  .herocontent h1{
+    padding-bottom: 0;
+  }
+  .mainbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .herocontent button{
+    margin-top: 1em;
+  }
+  .imgninfo{
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .imgninfo div{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .imginforeverse{
+  flex-direction: column-reverse;
+  }
+  
+  .imgninfo h1{
+    color: #142b6f;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
+  .imgninfo p{
+    color: grey;
+  }
+  
+  
+  .Questions{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .Questions div{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Qinfoimg{
+    flex-direction: column;
+    text-align: center;
+  }
+  .Qinfoimg h1{
+    color: #142b6f;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
+  .Qinfoimg p{
+    color: grey;
+  }
+  
+  .Qinfo{
+    font-size: 15px;
+    padding: 1rem 1.2rem;
+    height: auto;
+    width: 100%;
+  }
+  
+  footer .Links{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  footer{
+    text-align-last: center;
+  }
+  .onlineicons2, .onlineicons{
+    font-size: 1rem;
+  
+  
+  }
+  .onlineico,.onlinecoQ{
+    gap: 1rem;
+  }
+  
+
+  
+  
+  }
+
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+   
+   
+  .imgninfo h1{
+    color: #142b6f;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
+  .imgninfo p{
+    color: grey;
+  
+  }
+  
+ 
+  .Qinfoimg h1{
+    color: #142b6f;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
+  .Qinfoimg p{
+    color: grey;
+   
+  }
+  
+  .Qinfo{
+    font-size: 16px;
+    padding: 1rem 1.2rem;
+    height: auto;
+    width: 100%;
+  }
+  
+  footer .Links{
+    gap: 1rem;
+  }
+  .Links{
+    font-size: 20px;
+
+  }
+
+
+
+  
+  } 
+  
+
+ 
